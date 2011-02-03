@@ -1,7 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGPH.Web", "SGPH.Web\SGPH.Web.csproj", "{2A9D50BD-F607-4130-A8D3-79296616310A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{56E3D6E8-BA26-4242-A401-3961B6D4B205}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A9D50BD-F607-4130-A8D3-79296616310A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9D50BD-F607-4130-A8D3-79296616310A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9D50BD-F607-4130-A8D3-79296616310A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9D50BD-F607-4130-A8D3-79296616310A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E3D6E8-BA26-4242-A401-3961B6D4B205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E3D6E8-BA26-4242-A401-3961B6D4B205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E3D6E8-BA26-4242-A401-3961B6D4B205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E3D6E8-BA26-4242-A401-3961B6D4B205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
