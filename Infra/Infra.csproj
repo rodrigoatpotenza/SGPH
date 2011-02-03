@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56E3D6E8-BA26-4242-A401-3961B6D4B205}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infra</RootNamespace>
+    <AssemblyName>Infra</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contexto\GerenciadorDeContexto.cs" />
+    <Compile Include="Interfaces\IDicionarioDeValidacao.cs" />
+    <Compile Include="Interfaces\IFuncionarioRepositorio.cs" />
+    <Compile Include="Interfaces\IFuncionarioServico.cs" />
+    <Compile Include="Interfaces\IRepositorio.cs" />
+    <Compile Include="Interfaces\IServico.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\AreaRepositorio.cs" />
+    <Compile Include="Repositorio\CargoRepositorio.cs" />
+    <Compile Include="Repositorio\CidadeRepositorio.cs" />
+    <Compile Include="Repositorio\EscolaridadeRepositorio.cs" />
+    <Compile Include="Repositorio\EstadoRepositorio.cs" />
+    <Compile Include="Repositorio\FormacaoRepositorio.cs" />
+    <Compile Include="Repositorio\FuncionarioRepositorio.cs" />
+    <Compile Include="Repositorio\IdiomaRepositorio.cs" />
+    <Compile Include="Repositorio\PerfilRepositorio.cs" />
+    <Compile Include="Repositorio\SetorRepositorio.cs" />
+    <Compile Include="Repositorio\UnidadeRepositorio.cs" />
+    <Compile Include="Servicos\AreaServico.cs" />
+    <Compile Include="Servicos\CargoServico.cs" />
+    <Compile Include="Servicos\CidadeServico.cs" />
+    <Compile Include="Servicos\EscolaridadeServico.cs" />
+    <Compile Include="Servicos\EstadoServico.cs" />
+    <Compile Include="Servicos\FuncionarioServico.cs" />
+    <Compile Include="Servicos\IdiomaServico.cs" />
+    <Compile Include="Servicos\PerfilServico.cs" />
+    <Compile Include="Servicos\SetorServico.cs" />
+    <Compile Include="Servicos\UnidadeServico.cs" />
+    <Compile Include="SgphModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SgphModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="SgphModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SgphModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
